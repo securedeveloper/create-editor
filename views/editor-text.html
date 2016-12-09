@@ -1,0 +1,57 @@
+<table class="text-editor-table" draggable="false">
+    <tr>
+        <td>Text:</td>
+        <td colspan="3">
+            <input type="text" id="txt-editor-text" draggable="false" class="text-editor-input text-editor-txt" />
+        </td>
+    </tr>
+    <tr>
+        <td>Text Color:</td>
+        <td>
+            <input type='color' id="txt-editor-color" draggable="false" class="text-editor-input" />
+        </td>
+        <td>Font Size:</td>
+        <td>
+            <input type='number' id="txt-editor-font-size" min="14" max="48" draggable="false" class="text-editor-input" />
+        </td>
+    </tr>
+    <tr>
+        <td>Font :</td>
+        <td>
+            <select id="txt-editor-font" class="text-editor-input" draggable="false">
+                <option value="Arial,Arial,Helvetica,sans-serif">Arial,Arial,Helvetica,sans-serif</option>
+                <option value="Arial Black,Arial Black,Gadget,sans-serif">Arial Black,Arial Black,Gadget,sans-serif</option>
+                <option value="Comic Sans MS,Comic Sans MS,cursive">Comic Sans MS,Comic Sans MS,cursive</option>
+                <option value="Courier New,Courier New,Courier,monospace">Courier New,Courier New,Courier,monospace</option>
+                <option value="Georgia,Georgia,serif">Georgia,Georgia,serif</option>
+                <option value="Impact,Charcoal,sans-serif">Impact,Charcoal,sans-serif</option>
+                <option value="Lucida Console,Monaco,monospace">Lucida Console,Monaco,monospace</option>
+                <option value="Lucida Sans Unicode,Lucida Grande,sans-serif">Lucida Sans Unicode,Lucida Grande,sans-serif</option>
+                <option value="Palatino Linotype,Book Antiqua,Palatino,serif">Palatino Linotype,Book Antiqua,Palatino,serif</option>
+                <option value="Tahoma,Geneva,sans-serif">Tahoma,Geneva,sans-serif</option>
+                <option value="Times New Roman,Times,serif">Times New Roman,Times,serif</option>
+                <option value="Trebuchet MS,Helvetica,sans-serif">Trebuchet MS,Helvetica,sans-serif</option>
+                <option value="Verdana,Geneva,sans-serif">Verdana,Geneva,sans-serif</option>
+                <option value="Gill Sans,Geneva,sans-serif">Gill Sans,Geneva,sans-serif</option>
+            </select>
+        </td>
+        <td>Style :</td>
+        <td>
+            Bold: <input id="txt-editor-font-bold" type="checkbox" value="bold" draggable="false"/>
+            Italic: <input id="txt-editor-font-italic" type="checkbox" value="italic" draggable="false"/>
+            Underline: <input id="txt-editor-font-underline" type="checkbox" value="underline" draggable="false"/>
+            Inline: <input id="txt-editor-text-inline" type="checkbox" value="underline" draggable="false"/>
+        </td>
+    </tr>
+    <tr>
+        <td>PositionX<br><span id="txt-editor-position-label-x"></span> </td>
+        <td><br><input id="txt-editor-position-x" type="range" min="0" max="500" draggable="false" /> </td>
+        <td>PositionY<br><span id="txt-editor-position-label-y"></span></td>
+        <td><br><input id="txt-editor-position-y" type="range" min="0" max="500" draggable="false" /> </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <a  href="javascript:void(0);"  id="txt-editor-remove" draggable="false">Remove</a> | <a href="javascript:void(0);"  id="txt-editor-close" draggable="false">Close Toolbox</a>
+        </td>
+    </tr>
+</table>
